@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{dia.title}}</title>
+</head>
+<body>
+    <h1>django body</h1>
+
+    {% for dia in dia_list %}
+    <h3><a href = '/diary/{{dia.pk}}'>{{dia.title}}</a></h3>
+
+
+    <h3>{{dia}}</h3>
+    <h3>{{dia.created_at}}</h3>
+    <h3>{{dia.updated_at}}</h3>
+    <h3>{{dia.message}}</h3>
+    <br>
+
+    {% endfor %}
+
+    <hr/>
+
+</body>
+</html>
