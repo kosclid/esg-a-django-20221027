@@ -11,6 +11,7 @@
 
     {% for dia in dia_list %}
     <h3><a href = '/diary/{{dia.pk}}'>{{dia.title}}</a></h3>
+    <h3><a href = '{{dia.get_absolute_url}}'>{{dia.title}}</a></h3>
 
 
     <h3>{{dia}}</h3>
@@ -22,6 +23,8 @@
     {% endfor %}
 
     <hr/>
+    <a href = '/diary/new/'>새 포스팅 쓰기 </a>
+
 
 </body>
 </html>
