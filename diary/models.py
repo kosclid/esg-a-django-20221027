@@ -7,5 +7,5 @@ class Memory(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f'[{self.pk}] : {self.name}'
+        return f'[{self.pk}] : {self.title}'
 
